@@ -22,3 +22,17 @@ connection.query(
     connection.end();
   }
 );
+
+// simple error handling
+connection.query(
+  'SLECT "foo" AS first_field, "bar" AS second_field',
+  function(err, results, fields) {
+    if(err) {
+      console.log('A database error occurred!');
+    } else {
+      console.log(results);
+      console.log(fields);
+    }
+    connection.end();
+  }
+);
