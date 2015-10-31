@@ -10,9 +10,12 @@ var connection = mysql.createConnection({
   password: 'root'
 });
 
+//  the anonymous function is called when node,js receives an answer to the query
 connection.query(
   'SELECT "foo" AS first_field, "bar" AS second_field',
   function (err, results, fields) {
+    // results is an array of objects
+    // each obj is a row, each atribute is a field of the row
     console.log(results);
     connection.end();
   }
