@@ -1,7 +1,9 @@
 'use strict';
 
+// require Felix Geisendorfer's mysql library
 var mysql = require('mysql');
 
+// created connection object
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
