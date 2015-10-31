@@ -30,3 +30,8 @@ connection.query('CREATE TABLE test ' +
     }
   }
 );
+
+connection.query('INSERT INTO test (content) VALUES ("Hello")');
+connection.query('INSERT INTO test (content) VALUES ("World")');
+
+connection.end();
