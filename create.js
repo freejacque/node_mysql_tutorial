@@ -35,3 +35,5 @@ connection.query('INSERT INTO test (content) VALUES ("Hello")');
 connection.query('INSERT INTO test (content) VALUES ("World")');
 
 connection.end();
+
+//  This is run once to set up a new DB
