@@ -16,6 +16,7 @@ connection.query(
   function (err, results, fields) {
     // results is an array of objects
     // each obj is a row, each atribute is a field of the row
+    console.log(err);
     console.log(results);
     console.log(results[0].first_field);
     connection.end();
