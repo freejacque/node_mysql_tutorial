@@ -6,6 +6,7 @@ var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root',
+  // the db can be specified in the connection so it doesn't have to be specified in the queries
   database: 'node'
 });
 
