@@ -15,3 +15,8 @@ var query = connection.query('SELECT id, content FROM test');
 query.on('error', function(err) {
   console.log('A database error occurred:');
 })
+
+query.on('fields', function(fields) {
+  console.log('Received fields information.');
+});
+
