@@ -20,3 +20,7 @@ query.on('fields', function(fields) {
   console.log('Received fields information.');
 });
 
+query.on('result', function(result) {
+  console.log('Received result:');
+  console.log(result);
+});
