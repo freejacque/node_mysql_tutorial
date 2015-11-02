@@ -12,3 +12,6 @@ var connection = mysql.createConnection({
 
 var query = connection.query('SELECT id, content FROM test');
 
+query.on('error', function(err) {
+  console.log('A database error occurred:');
+})
