@@ -24,3 +24,8 @@ query.on('result', function(result) {
   console.log('Received result:');
   console.log(result);
 });
+
+query.on('end', function(){
+  console.log('Query execution has finished.');
+  connection.end();
+})
