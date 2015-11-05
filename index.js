@@ -4,6 +4,7 @@ var mysql = require('mysql');
 
 var connection = mysql.createConnection({
   host: 'localhost',
+  port: 3307,
   user: 'root',
   password: 'root',
   // the db can be specified in the connection so it doesn't have to be specified in the queries
