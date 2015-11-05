@@ -9,8 +9,6 @@ var connection = mysql.createConnection({
   password: 'root'
 });
 
-connection.connect();
-
 connection.query('DROP DATABASE IF EXISTS node', function(err) {
   if(err) {
     console.log('Could not drop database "node".');
